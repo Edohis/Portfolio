@@ -1,0 +1,242 @@
+/*--------------------------------------------------------------------
+## General
+--------------------------------------------------------------------*/
+
+/*---------- RESET AGAIN ----------*/
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: var(--font-family-primary);
+  background-color: var(--background-primary);
+  color: var(--color-primary);
+}
+
+ul,
+ol,
+summary {
+  list-style: none;
+}
+
+a,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  display: inline-flex /*-block*/;
+  cursor: pointer;
+  background: none;
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  /*padding: .45em .65em;*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus,
+button:focus-visible {
+  background-color: transparent;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+
+/*---------- SET FONT-SIZE ----------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  font-weight: 400;
+}
+
+/*---------- DISPLAY ----------*/
+
+.d-hidden {
+  display: none !important;
+}
+
+.hidden-visual {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*---------- ICON ----------*/
+
+*[data-icon-side="left"] {
+  margin-right: 4px;
+}
+
+*[data-icon-side="right"] {
+  margin-left: 4px;
+}
+
+/*---------- BUTTON ----------*/
+
+.btn {
+  text-align: justify;
+  border: 2px solid transparent;
+}
+
+.btn:focus,
+a:focus {
+  outline: 1px solid var(--outline-primary);
+  outline-offset: -4px;
+}
+
+.btn-navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: all .25s;
+}
+
+.btn-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  padding: 20px 10px;
+  border: 2px solid var(--bc-btn-icon);
+  border-radius: 10px;
+  background-color: var(--bg-btn-icon);
+}
+
+.btn-icon:hover,
+.btn-icon:focus {
+  background-color: var(--bg-hover-box-shadow);
+  -webkit-box-shadow: 0 14px 28px var(--shadow-hover-box-shadow);
+  box-shadow: 0 14px 28px var(--shadow-hover-box-shadow);
+}
+
+.btn-link {
+  font-size: 1rem;
+  font-family: var(--font-family-link);
+  color: var(--color-btn-link);
+  text-decoration: 4px underline dotted var(--td-btn-link);
+  transition: all .2s;
+}
+@media only screen and  (min-width: 640px) {
+  .btn-link {
+    font-size: 1.2rem;
+  }
+}
+
+.btn-link:hover,
+.btn-link:focus {
+  text-decoration-style: solid;
+  text-decoration-color: var(--td-hover-btn-link);
+  text-transform: uppercase;
+}
+
+
+.btn-link:hover.uppercase 
+.btn-link:focus.uppercase {
+  text-transform: uppercase;
+}
+
+.btn-link.footer {
+  text-decoration: 2px underline dotted var(--color-primary);
+}
+.btn-link:hover.footer,
+.btn-link:focus.footer {
+  outline: none;
+  text-transform: capitalize;
+}
+
+
+.btn-contact {}
+
+/*---------- ACCORDION ----------*/
+
+.list-accordion {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-top: 1px solid var(--bc-accordion-item);
+  overflow: hidden;
+  background-color: var(--bg-accordion-item);
+  color: var(--clr-accordion-item);
+}
+
+.accordion-item-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 20px;
+  background-color: var(--bg-accordion-item-title);
+  color: var(--clr-accordion-item-title);
+  position: relative;
+  font-weight: bold;
+}
+
+.accordion-item-title:before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: var(--bg-accordion-item-title-before);
+  left: 20px;
+  bottom: -7px;
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  background: var(--bg-accordion-item-content);
+  color: var(--clr-accordion-item-content);
+  overflow: hidden;
+  display: none;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-item .accordion-content {
+  display: none;
+  padding-top: 0;
+}
+
+.accordion-item:hover .accordion-content {
+  display: flex;
+  min-height: auto;
+  padding-top: 20px;
+}
+
+.accordion-content > * {
+  width: 100%;
+  border: 1px solid transparent;
+  padding: 10px 5px;
+}
+
+/*---------- UTILITY ----------*/
+
+
+.box-shadow:hover {
+  background-color: var(--bg-hover-box-shadow);
+  -webkit-box-shadow: 0 14px 28px var(--shadow-hover-box-shadow);
+  box-shadow: 0 14px 28px var(--shadow-hover-box-shadow);
+}

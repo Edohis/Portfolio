@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Home - Christopher Rieffel | Junior Developer</title>
+
+  <!--* Description & Keywords (TODO:) *-->
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!--* Favicons (TODO:) *-->
+  <!-- <link rel="icon" href="assets/images/favicon.png" /> -->
+
+  <!--* Google Fonts *--> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi+Fun:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+
+  <!--* Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+
+  <!--* Main CSS Files *-->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/vars.css" />
+  <link rel="stylesheet" href="assets/css/general.css" />
+  <link rel="stylesheet" href="assets/css/consent.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!--* Vendor JS Files *-->
+  <script src="https://kit.fontawesome.com/b8af886c75.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+  
+  <!--* Main JS Files *-->
+  <script src="assets/js/shortcut.js" defer></script>
+  <script src="assets/js/utility.js" defer></script>
+  <script src="assets/js/translation.js" defer></script>
+  <script src="assets/js/listProjects.js" defer></script>
+  <script src="assets/js/projects.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/language/index.js" defer></script>
+</head>
+
+<body id="Page">
+  
+  <header id="HeaderPrimary" class="header-primary">
+    <a id="Logo" href="index.html">Rico</a>
+    <nav id="NavbarPrimary" class="navbar-primary">
+      <div class="navbar-content">
+        <a class="btn btn-navbar active" href="#SectionHome">
+          <i class="fa fa-house"></i>
+          <span class="navbar-item-name">Home</span>
+        </a>
+        <a class="btn btn-navbar" href="#SectionAbout">
+          <i class="fa fa-user"></i>
+          <span class="navbar-item-name">About</span>
+        </a>
+        <a class="btn btn-navbar" href="#SectionResume">
+          <i class="fa fa-file"></i>
+          <span class="navbar-item-name">Resume</span>
+        </a>
+        <a class="btn btn-navbar" href="#SectionSkills">
+          <i class="fa fa-code"></i>
+          <span class="navbar-item-name">Skills</span>
+        </a>
+        <a class="btn btn-navbar" href="#SectionProjects">
+          <i class="fa fa-briefcase"></i>
+          <span class="navbar-item-name">Projects</span>
+        </a>
+        <!--<a class="btn btn-navbar" href="#">
+          <i class="fa-regular fa-comments"></i>
+          <span class="navbar-item-name">Testimony</span>
+        </a>-->
+        <a class="btn btn-navbar" href="#SectionContact">
+          <i class="fa fa-phone"></i>
+          <span class="navbar-item-name">Contact</span>
+        </a>
+      </div>
+      <div class="navbar-actions">
+        <button id="MobileNavbarToggle" class="btn btn-navbar" type="button">
+          <span class="hidden-visual">Open navbar for mobile</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="navbar-divider"></div>
+        <a id="NavbarLang" class="btn btn-navbar" href="index-fr.html">
+          <span class="hidden-visual">Change the language of the site to</span>
+          <i class="fa-solid fa-globe" data-icon-side="left"></i>
+          <span id="LanguageSite" class="navbar-item-name">Français</span>
+        </a>
+        <button id="NavbarMode" class="btn btn-navbar" type="button">
+          <span class="hidden-visual">Change the theme of the site to</span>
+          <i id="NavbarIconMode" class="fa-solid fa-moon"></i>
+          <span id="NavbarTextMode" class="navbar-item-name">Dark</span>
+        </button>
+        <button id="MobileNavbarClose" class="btn btn-navbar" type="button">
+          <span class="hidden-visual">Close navbar for mobile</span>
+          <i class="fa-solid fa-close"></i>
+          <span class="navbar-item-name">Close</span>
+        </button>
+      </div>
+      <div class="navbar-scroll">
+        <p id="NavbarScroll" class="btn btn-navbar">
+          <i class="fa-solid fa-arrow-down"></i>
+          <span class="navbar-item-name">Scroll down</span>
+        </p>
+      </div>
+    </nav>
+  </header>
+  
+  <main id="MainPrimary" class="main-primary">
+    
+    <!-- SECTION HOME -->
+    <section id="SectionHome" class="section home">
+      <div class="home-container">
+        <div class="home-block-heading">
+          <h1 class="home-title">
+            <span>Christopher Rieffel</span>
+            <span>Junior Front-end</span>
+            <span>Web Developer</span>
+            <span>With some Back-end skills</span>
+          </h1>
+          <p class="home-subtitle">
+            <span>Creator of sites, games and apps.</span>
+            <span>Passionate about games, writing and coding.</span>
+            <span>Self/School-taught developer.</span>
+          </p>
+        </div>
+        <div class="home-actions">
+          <a class="btn btn-link" href="#SectionContact">Contact me</a>
+          <a class="btn btn-link" href="#SectionResume">My Resume</a>
+          <a class="btn btn-link" href="#SectionProjects">My Projects</a>
+        </div>
+        <div class="home-links">
+          <a class="btn btn-icon" href="#">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="btn btn-icon" href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="btn btn-icon" href="#">
+            <i class="fab fa-dev"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    
+    <!-- SECTION ABOUT -->
+    <section id="SectionAbout" class="section-primary about">
+      <div class="section-primary-container">
+        <header class="section-primary-header">
+          <span>Some info</span>
+          <h2>About me</h2>
+        </header>
+        <div class="section-primary-content">
+          <p class="box-shadow">
+          I am a web developer, French, born in 1998. I discovered at the age of 15, a new hobbies: computer development. Hobbies that I practice next to my studies and that I put aside to study law and computer science to become a lawyer specialized in computer science. However, after two-three years of law studies, I decided to stop my law studies to launch myself in computer science studies. Having obtained my diploma of computer science, and having more than 5 years in self-taught in computer development, I decide to create this site in order to launch me in the professional world.
+          </p>
+          <div>
+            <a class="btn btn-link uppercase" href="about.html">Read more about me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- SECTION RESUME -->
+    <section id="SectionResume" class="section-primary resume">
+      <div class="section-primary-container">
+        <header class="section-primary-header">
+          <span>Read my</span>
+          <h2>Resume</h2>
+        </header>
+        <div class="section-primary-content">
+          <div class="box-shadow">
+            <p>PDF Version:</p>
+            <a class="btn btn-link" href="#">English - Coming soon!</a>
+            <a class="btn btn-link" href="#">Français - Coming soon!</a>
+          </div>
+          <div class="box-shadow">
+            <p>Site Version:</p>
+            <a class="btn btn-link" href="#">Coming soon!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- SECTION SKILLS -->
+    <section id="SectionSkills" class="section-primary skills">
+      <div class="section-primary-container">
+        <header class="section-primary-header">
+          <span>Check out my</span>
+          <h2>Skills</h2>
+        </header>
+        <div class="section-primary-content">
+          <div class="skill-box box-shadow">
+            <h3>Mastered</h3>
+            <div class="skill-list">
+              <!-- front-end -->
+              <p class="skill-item">HTML/HTML5</p>
+              <p class="skill-item">CSS/CSS3</p>
+              <p class="skill-item">JavaScript</p>
+              <p class="skill-item">Bootstrap</p>
+              <p class="skill-item">Json</p>
+              <!-- back-end -->
+              <p class="skill-item">PHP</p>
+              <!-- database -->
+              <p class="skill-item">MySQL</p>
+              <p class="skill-item">PhpMyAdmin</p>
+              <!-- version control -->
+              <p class="skill-item">Git</p>
+              <p class="skill-item">Github</p>
+              <!-- cms -->
+              <p class="skill-item">Wordpress</p>
+              <p class="skill-item">Wix</p>
+              <!-- editor -->
+              <p class="skill-item">VS code</p>
+              <p class="skill-item">Notepad++</p>
+              <p class="skill-item">Atome</p>
+              <!-- os -->
+              <p class="skill-item">Window</p>
+              <p class="skill-item">Linux - Ubuntu</p>
+              <!-- management -->
+              <p class="skill-item">Jira</p>
+              <p class="skill-item">Trello</p>
+            </div>
+          </div>
+          <div class="skill-box box-shadow">
+            <h3>In learning</h3>
+            <div class="skill-list">
+              <!-- front-end -->
+              <p class="skill-item">React JS</p>
+              <p class="skill-item">Angular JS</p>
+              <p class="skill-item">Jquery</p>
+              <!-- back-end -->
+              <p class="skill-item">Python</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--- SECTION PROJECTS -->
+    <section id="SectionProjects" class="section-primary projects">
+      <div class="section-primary-container">
+        <header class="section-primary-header">
+          <span>Take a loot at my</span>
+          <h2>Featured Projects</h2>
+        </header>
+        <div class="section-primary-content">
+          <div id="ListFeaturedProjects" class="project-featured">
+          </div>
+          <div class="project-more-works box-shadow">
+            <p>Want more?</p>
+            <div class="project-more-works-box">
+              <div>
+                <a class="btn btn-text box-shadow" href="projects-personal.html">Personal</a>
+              </div>
+              <div>
+                <a class="btn btn-text box-shadow" href="projects-professional.html">Professional</a>
+              </div>  
+              <div>
+                <a class="btn btn-text box-shadow" href="projects-training.html">Training</a>
+              </div>  
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <!--<section class="section-primary testimony">
+      <div class="section-primary-container">
+        <header class="section-primary-header">
+          <span>Read out some</span>
+          <h2>Testomonies</h2>
+        </header>
+        <div class="section-primary-content">
+          CONTENT
+        </div>
+    </section>-->
+    
+    <section id="SectionContact" class="section-primary contact">
+      <div class="section-primary-container">
+        <header class="section-primary-header">
+          <span >Talk? Question? Recruiting?</span>
+          <h2 >Get in touch with me</h2>
+        </header>
+        <div class="section-primary-content">
+          <div class="contact-foreword">
+            <p><strong >
+              Even though I make a lot of spelling, grammar and conjugation mistakes because of my disability.
+              I don't eat anybody and I'm friendly with everybody.
+            </strong></p>
+          </div>
+          <div class="contact-method">
+            <div class="contact-list">
+              <a class="btn btn-contact big box-shadow" href="#">
+                <i class="fa-solid fa-envelope"></i>
+                <span>christopher.rieffel.<br class="contact-method-email-br" />rico@gmail.com</span>
+                <p >Email me</p>
+              </a>
+              <a class="btn btn-contact big box-shadow" href="#">
+                <i class="fa-solid fa-calendar"></i>
+                <span>Calendly</span>
+                <p >Schedule a meeting</p>
+              </a>
+            </div>
+            <div class="contact-reach-me box-shadow">
+              <p >Reach me on</p>
+              <div class="contact-list">
+                <a class="btn btn-contact small box-shadow" href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a class="btn btn-contact small box-shadow" href="#">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a class="btn btn-contact small box-shadow" href="#">
+                  <i class="fab fa-discord"></i>
+                </a>
+                <a class="btn btn-contact small box-shadow" href="#">
+                  <i class="fab fa-slack"></i>
+                </a>
+                <a class="btn btn-contact small box-shadow" href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a class="btn btn-contact small box-shadow" href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--<div class="contact-form">
+            <h3>Send me your message</h3>
+            <form id="ContatForm" action="https;//formspree.io/" method="POST">
+              <div class="form-name-email">
+                <div class="form-duo">
+                  <label for="formName" class="form-label">Name</label>
+                  <input id="FormNameInput" class="form-input" type="text" name="formName" required placeholder="Your Name*" />
+                </div>
+                <div class="form-duo">
+                  <label for="formEmail" class="form-label">Email</label>
+                  <input id="FormEmailInput" class="form-input" type="email" name="formEmail" required placeholder="Your Email*" />  
+                </div>
+              </div>
+              <label for="formSubject" class="form-label">Subject</label>
+              <input id="FormSubjectInput" class="form-input" type="text" name="formSubject" required placeholder="Subject*" />
+              <label for="formMessage" class="form-label">Message</label>
+              <input id="FormMessageInput" class="form-input" type="text" name="formMessage" required placeholder="Your Message*" />
+            </form>
+            <div class="contact-form-send">
+              <button class="form-send box-shadow" type="submit" target="_blank" form="ContactForm" rel="noopener noreferrer">Send</button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-primary">
+    <div class="footer-social">
+      <a class="btn btn-icon" href="#">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a class="btn btn-icon" href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="btn btn-icon" href="#">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a class="btn btn-icon" href="#">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="btn btn-icon" href="#">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="footer-legal">
+      <a class="btn-link footer" href="policy.html">Privacy policy</a>
+    </div>
+    <p class="footer-content">&copy; 2022 - Christopher Rieffel.</p>
+  </footer>
+    
+  <aside id="DataConsent" class="data-consent hidden">
+    <div class="data-consent-container">
+      <div class="data-consent-lang">
+        <button id="ConsentLang" class="btn" type="button">En Français</button>
+      </div>    
+      <div class="data-consent-content">
+        <img data-i18n-key="DataConsentImgAlt" src="assets/images/cookie.png" />
+        <h2 data-i18n-key="DataConsentTitle">Data Consent</h2>
+        <p data-i18n-key="DataConsentDesc">
+        This site stores data on your browser to allow you a better experience on the site. 
+        This data is used for the language and theme of the site. For more information you 
+        can <a class="consent-link" href="policy.html" data-i18n-key="DataConsentDescLink">read the data policy of this site</a>.
+      </p>
+      </div>
+      <div class="data-consent-actions">
+        <button id="DataConsentAccept" class="btn" type="button" data-i18n-key="DataConsentBtnAccept">Accept</button>
+        <button id="DataConsentRefuse" class="btn" type="button" data-i18n-key="DataConsentBtnRefuse">Refuse</button>
+      </div>
+    </div>
+  </aside>
+  
+</body>
+
+</html>

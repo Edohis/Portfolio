@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Projects professional - Christopher Rieffel | Junior Developer</title>
+
+  <!--* Description & Keywords (TODO:) *-->
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!--* Favicons (TODO:) *-->
+  <!-- <link rel="icon" href="assets/images/favicon.png" /> -->
+
+  <!--* Google Fonts *-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi+Fun:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+
+  <!--* Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+
+  <!--* Main CSS Files *-->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/vars.css" />
+  <link rel="stylesheet" href="assets/css/general.css" />
+  <link rel="stylesheet" href="assets/css/consent.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!--* Vendor JS Files *-->
+  <script src="https://kit.fontawesome.com/b8af886c75.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+
+  <!--* Main JS Files *-->
+  <script src="assets/js/shortcut.js" defer></script>
+  <script src="assets/js/utility.js" defer></script>
+  <script src="assets/js/translation.js" defer></script>
+  <script src="assets/js/listProjects.js" defer></script>
+  <script src="assets/js/projects.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/language/projectsPro.js" defer></script>
+</head>
+
+<body id="Page">
+  
+  <header id="HeaderPrimary" class="header-primary">
+    <a id="Logo" href="index.html">Rico</a>
+    <nav id="NavbarPrimary" class="navbar-primary">
+      <div class="navbar-content">
+        <a class="btn btn-navbar active" href="index.html#SectionHome">
+          <i class="fa-regular fa-circle-left"></i>
+          <span class="navbar-item-name">Back</span>
+        </a>
+        <a class="btn btn-navbar active" href="#SectionHomeProProject">
+          <i class="fa fa-house"></i>
+          <span class="navbar-item-name">Home</span>
+        </a>
+        <a class="btn btn-navbar" href="#SectionFeaturedProProjects">
+          <i class="fa-solid fa-star"></i>
+          <span class="navbar-item-name">Featured</span>
+        </a>
+        <a class="btn btn-navbar" href="#SectionMoreProProjects">
+          <i class="fa-solid fa-folder-plus"></i>
+          <span class="navbar-item-name">More</span>
+        </a>
+        <a class="btn btn-navbar" href="index.html#SectionContact">
+          <i class="fa fa-phone"></i>
+          <span class="navbar-item-name">Contact</span>
+        </a>
+      </div>
+      <div class="navbar-actions">
+        <button id="MobileNavbarToggle" class="btn btn-navbar" type="button">
+          <span class="hidden-visual">Open navbar for mobile</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="navbar-divider"></div>
+        <button id="NavbarLang" class="btn btn-navbar" type="button">
+          <span class="hidden-visual">Change the language of the site to French</span>
+          <i class="fa-solid fa-globe" data-icon-side="left"></i>
+          <span class="navbar-item-name">Français</span>
+        </button>
+        <button id="NavbarMode" class="btn btn-navbar" type="button">
+          <span class="hidden-visual">Change the theme of the site to dark</span>
+          <i id="NavbarIconMode" class="fa-solid fa-moon"></i>
+          <span id="NavbarTextMode" class="navbar-item-name">Dark</span>
+        </button>
+        <button id="MobileNavbarClose" class="btn btn-navbar" type="button">
+          <span class="hidden-visual">Close navbar for mobile</span>
+          <i class="fa-solid fa-close"></i>
+          <span class="navbar-item-name">Close</span>
+        </button>
+      </div>
+      <div class="navbar-scroll">
+        <p id="NavbarScroll" class="btn btn-navbar">
+          <i class="fa-solid fa-arrow-down"></i>
+          <span class="navbar-item-name">Scroll down</span>
+        </p>
+      </div>
+    </nav>
+  </header>
+  
+  <main id="MainPrimary" class="main-primary">
+    
+    <!-- SECTION HOME -->
+    <section id="SectionHomeProProject" class="section home">
+      <div class="home-container">
+        <div class="home-block-heading">
+          <h1 class="home-title">
+            <span>Sites, Games, Applications and</span>
+            <span>Others professional projects of a</span>
+            <span>Web Developer</span>
+          </h1>
+        </div>
+        <div class="home-actions">
+          <a class="btn btn-link" href="index.html#SectionContact">Contact me</a>
+          <a class="btn btn-link" href="index.html#SectionAbout">About me</a>
+          <a class="btn btn-link" href="index.html#SectionResume">My Resume</a>
+        </div>
+        <div class="home-links">
+          <a class="btn btn-icon" href="#">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="btn btn-icon" href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="btn btn-icon" href="#">
+            <i class="fab fa-dev"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION FEATURED PROJECTS -->
+    <section id="SectionFeaturedProProjects" class="section-primary projects projects-page projects-current">
+      <div class="section-primary-container">
+        <header class="section-primary-header">
+          <span>List of some of my featured</span>
+          <h2>Professional projects</h2>
+        </header>
+        <div class="section-primary-content">
+          <div id="ListFeaturedProProjects" class="project-featured">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- SECTION MORE PROJECTS -->
+    <section id="SectionMoreProProjects" class="section-primary projects projects-page projects-current">
+      <div class="section-primary-container">
+        <header class="section-primary-header">
+          <span>My list of all</span>
+          <h2>My professional projects</h2>
+        </header>
+        <div class="section-second-content">
+          <div class="list-all-projects">
+            <a class="btn btn-link" href="#">Review all my projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  
+  <footer class="footer-primary">
+    <div class="footer-social">
+      <a class="btn btn-icon" href="#">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a class="btn btn-icon" href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="btn btn-icon" href="#">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a class="btn btn-icon" href="#">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="btn btn-icon" href="#">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="footer-legal">
+      <a class="btn-link footer" href="policy.html">Privacy policy</a>
+    </div>
+    <p class="footer-content">&copy; 2022 - Christopher Rieffel.</p>
+  </footer>
+  
+  <aside id="DataConsent" class="data-consent hidden">
+    <div class="data-consent-container">
+      <div class="data-consent-lang">
+        <button id="ConsentLang" class="btn" type="button">En Français</button>
+      </div>    
+      <div class="data-consent-content">
+        <img data-i18n-key="DataConsentImgAlt" src="assets/images/cookie.png" />
+        <h2 data-i18n-key="DataConsentTitle">Data Consent</h2>
+        <p data-i18n-key="DataConsentDesc">
+        This site stores data on your browser to allow you a better experience on the site. 
+        This data is used for the language and theme of the site. For more information you 
+        can <a class="consent-link" href="policy.html" data-i18n-key="DataConsentDescLink">read the data policy of this site</a>.
+      </p>
+      </div>
+      <div class="data-consent-actions">
+        <button id="DataConsentAccept" class="btn" type="button" data-i18n-key="DataConsentBtnAccept">Accept</button>
+        <button id="DataConsentRefuse" class="btn" type="button" data-i18n-key="DataConsentBtnRefuse">Refuse</button>
+      </div>
+    </div>
+  </aside>
+
+</body>
+
+</html>

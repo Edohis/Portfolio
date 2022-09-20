@@ -1,0 +1,195 @@
+/*--------------------------------------------------------------------
+## Navbar
+--------------------------------------------------------------------*/
+
+/*---------- NAVBAR PRIMARY ----------*/
+
+.navbar-primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: calc(100% - 60px);
+  height: 100%; /*40px;*/
+}
+  
+.navbar-primary .btn-navbar {
+  justify-content: center;
+  height: 100%;
+  width: 50px;
+}
+
+.navbar-primary .btn-navbar:hover {    
+  background-color: var(--bg-hover-btn-navbar);
+  -webkit-box-shadow: 0 14px 28px var(--shadow-hover-btn-navbar);
+  box-shadow: 0 14px 28px var(--shadow-hover-btn-navbar);
+}
+  
+.navbar-primary #NavbarLang.btn-navbar {
+  width: 100px;
+}
+  
+.navbar-primary #NavbarMode.btn-navbar > .navbar-item-name {
+  display: none;
+}
+  
+.navbar-primary #MobileNavbarClose.btn-navbar,
+.navbar-primary .navbar-content,
+.navbar-primary .navbar-divider,
+.navbar-primary .navbar-scroll {
+  display: none;
+}
+  
+.navbar-primary .navbar-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-primary.navbar-mobile {
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    height: calc(100% - 40px);
+  }
+  
+  .navbar-btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .navbar-primary.navbar-mobile .btn-navbar,
+  .navbar-primary.navbar-mobile #NavbarLang.btn-navbar,
+  .navbar-primary.navbar-mobile #MobileNavbarClose.btn-navbar {
+    height: 40px;
+    width: 80%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .navbar-primary.navbar-mobile #MobileNavbarClose.btn-navbar {
+    display: flex;
+  }
+  
+  .navbar-primary.navbar-mobile .btn-navbar:hover,
+  .navbar-primary.navbar-mobile #NavbarLang.btn-navbar:hover {
+    border-color: var(--bc-btn-navbar);
+  }
+  
+  .navbar-primary.navbar-mobile #NavbarScroll.btn-navbar:hover {
+    border-color: transparent;
+  }
+
+  .navbar-primary.navbar-mobile .btn-navbar+.btn-navbar {
+    margin-left: 0;
+  }
+  
+  .navbar-primary.navbar-mobile .navbar-item-name,
+  .navbar-primary.navbar-mobile #MobileNavbarToggle {
+    display: none;
+  }
+  
+  .navbar-primary:hover.navbar-mobile .btn-navbar i,
+  .navbar-primary:hover.navbar-mobile #NavbarScroll.btn-navbar i {
+    margin-right: 80px;
+  }
+  
+  .navbar-primary:hover.navbar-mobile .navbar-item-name,
+  .navbar-primary:hover.navbar-mobile #NavbarMode > .navbar-item-name,
+  .navbar-primary:hover.navbar-mobile #MobileNavbarClose > .navbar-item-name {
+    display: block;
+    text-align: left;
+    position: absolute;
+    left: 65px;
+  }
+  
+  .navbar-primary.navbar-mobile .navbar-content,
+  .navbar-primary.navbar-mobile .navbar-scroll {
+    display: flex;
+  }
+  
+  .navbar-primary.navbar-mobile .navbar-content,
+  .navbar-primary.navbar-mobile .navbar-actions,
+  .navbar-primary.navbar-mobile .navbar-scroll {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: auto;
+    width: 100%;
+  }
+
+  .navbar-primary.navbar-mobile .navbar-scroll {
+    justify-content: end; 
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px)  {
+  .navbar-primary {
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    height: calc(100% - 40px);
+  }
+  
+  .navbar-primary .btn-navbar,
+  .navbar-primary #NavbarLang.btn-navbar {
+    height: 40px;
+    width: 80%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-primary .btn-navbar:hover,
+  .navbar-primary #NavbarLang.btn-navbar:hover {
+    border-color: var(--bc-btn-navbar);
+  }
+  
+  .navbar-primary #NavbarScroll.btn-navbar:hover {
+    border-color: transparent;
+  }
+
+  .navbar-primary .btn-navbar+.btn-navbar {
+    margin-left: 0;
+  }
+
+  .navbar-primary .navbar-item-name,
+  .navbar-primary #MobileNavbarToggle {
+    display: none;
+  }
+
+  .navbar-primary:hover .btn-navbar i {
+    margin-right: 80px;
+  }
+  
+  .navbar-primary:hover .navbar-item-name,
+  .navbar-primary:hover #NavbarMode > .navbar-item-name {
+    display: block;
+    text-align: left;
+    position: absolute;
+    left: 65px;
+  }
+
+  .navbar-primary .navbar-content,
+  .navbar-primary .navbar-scroll {
+    display: flex;
+  }
+
+  .navbar-primary .navbar-content,
+  .navbar-primary .navbar-actions, 
+  .navbar-primary .navbar-scroll {
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: auto;
+    width: 100%;
+  }
+  
+  .navbar-primary .navbar-scroll {
+    justify-content: end; 
+    margin-top: 10px;
+  }
+}

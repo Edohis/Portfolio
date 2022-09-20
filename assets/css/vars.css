@@ -1,0 +1,136 @@
+/*--------------------------------------------------------------------
+## Vars
+--------------------------------------------------------------------*/
+
+:root {
+  --font-family-primary: 'Roboto', sans-serif;
+  --font-family-logo: 'Aref Ruqaa Ink', serif;
+  --font-family-heading: 'Poppins', sans-serif;
+  --font-family-link: 'Merriweather', serif;
+  --font-family-content: 'Playfair Display', serif;
+  --font-family-section-main-title: 'Aref Ruqaa Ink', serif;
+  --font-family-section-main: 'Reem Kufi Fun', sans-serif;
+  --font-family-consent: 'Source Sans Pro', sans-serif;
+  /*
+  font-family: 'Aref Ruqaa Ink', serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Reem Kufi Fun', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  */
+}
+
+body {
+  /** base **/
+  --bg-primary: rgb(255, 255, 255);
+  --color-primary: rgb(0, 0, 0);
+  --outline-primary: rgb(31, 99, 189);
+  
+  /** header & footer primary **/
+  --bg-header-primary: rgb(177, 206, 240);
+  --bc-header-primary: rgb(103, 169, 237);
+  --bg-footer-primary: rgb(177, 206, 240);
+  --bc-footer-primary: rgb(103, 169, 237);
+  
+  /** navbar **/
+  --bc-btn-navbar: transparent;
+  --bg-hover-btn-navbar: rgba(177, 206, 240, .5);
+  --shadow-hover-btn-navbar: rgba(0, 0, 0, .2);
+
+  /** main **/
+  --bg-main-primary: rgb(255, 255, 255);
+  --color-main-primary: rgb(0, 0, 0);
+  
+  /** section **/
+  --bg-bar-for-section-main-title: rgb(177, 206, 240);
+  --bc-skill-item: rgb(177, 206, 240);
+  --bc-project-box: rgb(177, 206, 240);
+  --bc-project-more: rgb(177, 206, 240);
+  --bg-project-more-btn: rgb(177, 206, 240);
+  --clr-project-more-btn: rgb(0, 0, 0);
+  --bc-project-tag: rgb(177, 206, 240);
+  --bc-contact-method: transparent;
+  --bg-contact-list-btn-big: rgb(177, 206, 240);
+  --clr-contact-list-btn-big: rgb(0, 0, 0);
+  --bg-contact-form: rgb(177, 206, 240);
+  --bc-contact-form-form: rgb(103, 169, 237);
+  --bc-contat-form-btn-send: rgb(103, 169, 237);
+  --clr-contact-form: rgb(0, 0, 0);
+  
+  /** shadow **/
+  --bg-hover-box-shadow: transparent; /*rgb(177, 206, 240);*/
+  --shadow-hover-box-shadow: rgba(0, 0, 0, .2);
+  
+  /** btn **/
+  --color-btn-link: inherit;
+  --td-btn-link: rgb(177, 206, 240);
+  --td-hover-btn-link: rgb(103, 169, 237);
+  --bg-btn-icon: transparent;
+  --bc-btn-icon: transparent;
+  
+  /** consent **/
+  --bg-data-consent: rgb(255, 255, 255);
+  --shadow-data-consent: rgba(0, 0, 0, .2);
+  --td-consent-link: rgb(177, 206, 240);
+  --bc-btn-consent-actions: rgb(177, 206, 240);
+}
+
+body.theme-dark {
+  /** base **/
+  --bg-primary: rgb(0, 0, 0);
+  --color-primary: rgb(255, 255, 255);
+  --outline-primary: rgb(31, 99, 189);
+  
+  /** header & footer primary **/
+  --bg-header-primary: rgb(47, 83, 146);
+  --bc-header-primary: rgb(1, 61, 99);
+  --bg-footer-primary: rgb(47, 83, 146);
+  --bc-footer-primary: rgb(1, 61, 99);
+  
+  /** navbar **/
+  --bc-btn-navbar: transparent;
+  --bg-hover-btn-navbar: rgba(255, 255, 255, .2);
+  --shadow-hover-btn-navbar: rgba(255, 255, 255, .1);
+
+  /** main **/
+  --bg-main-primary: rgb(32, 32, 32);
+  --color-main-primary: rgb(255, 255, 255);
+    
+  /** section **/
+  --bg-bar-for-section-main-title: rgb(47, 83, 146);
+  --bc-skill-item: rgb(47, 83, 146);
+  --bc-project-box: rgb(47, 83, 146);
+  --bc-project-more: rgb(47, 83, 146);
+  --bg-project-more-btn: rgb(47, 83, 146);
+  --clr-project-more-btn: rgb(255, 255, 255);
+  --bc-project-tag: rgb(47, 83, 146);
+  --bc-contact-method: transparent;
+  --bg-contact-list-btn-big: rgb(47, 83, 146);
+  --clr-contact-list-btn-big: rgb(255, 255, 255);
+  --bg-contact-form: rgb(47, 83, 146);
+  --bc-contact-form-form: rgb(1, 61, 99);
+  --bc-contat-form-btn-send: rgb(1, 61, 99);
+  --clr-contact-form: rgb(255, 255, 255);
+  
+  /** shadow **/
+  --bg-hover-box-shadow: transparent; /*rgb(47, 83, 146);*/
+  --shadow-hover-box-shadow: rgba(255, 255, 255, .1);
+  
+  /** btn **/
+  --color-btn-link: inherit;
+  --td-btn-link: rgb(47, 83, 146);
+  --td-hover-btn-link: rgb(1, 61, 99);
+  --bg-btn-icon: transparent;
+  --bc-btn-icon: transparent;
+  
+  /** consent **/
+  --bg-data-consent: rgb(32, 32, 32);
+  --shadow-data-consent: rgba(255, 255, 255, .1);
+  --td-consent-link: rgb(47, 83, 146);
+  --bc-btn-consent-actions: rgb(47, 83, 146);
+}

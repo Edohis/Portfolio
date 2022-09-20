@@ -1,0 +1,115 @@
+/*--------------------------------------------------------------------
+## Consent
+--------------------------------------------------------------------*/
+  
+.data-consent {
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  font-size: 1rem;
+  font-family: var(--font-family-consent);
+  z-index: 10;
+}
+@media (min-width: 640px) {
+  .data-consent {
+    width: 40%;
+  }
+}
+
+
+.data-consent.hidden {
+  display: none;
+}
+
+.data-consent .data-consent-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background-color: var(--bg-data-consent);
+  box-shadow: 0 0 2em var(--shadow-data-consent);
+  border: 2px solid transparent;
+  transition: all 0.5s ease-in;
+}
+.data-consent .data-consent-lang {
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: end;
+}
+
+.data-consent .data-consent-lang button {
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight:  600;
+}
+
+.data-consent img {
+  display: block;
+  position: relative;
+  width: 3.75em;
+  margin: 10px 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateZ(0);
+}
+
+.data-consent .data-consent-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.data-consent .data-consent-content h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.data-consent .data-consent-content p {
+  width: 100%;
+  font-size: 1.1rem;
+  font-style: italic;
+  text-align: justify;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+
+.data-consent .data-consent-content a.consent-link {
+  text-decoration: 2px underline dotted var(--td-consent-link);
+}
+
+.data-consent .data-consent-content a.consent-link:hover,
+.data-consent .data-consent-content a.consent-link:focus {
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: none;
+}
+
+.data-consent .data-consent-actions {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 10px 12px;
+}
+
+.data-consent .data-consent-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  border-radius: 10px;
+  padding: 4px;
+  border: 2px solid var(--bc-btn-consent-actions);
+}

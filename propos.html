@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>À propos - Christopher Rieffel | Développeur junior</title>
+
+  <!--* Description & Keywords (TODO:) *-->
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <!--* Favicons (TODO:) *-->
+  <!-- <link rel="icon" href="assets/images/favicon.png" /> -->
+
+  <!--* Google Fonts *-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi+Fun:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap">
+
+  <!--* Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" />
+
+  <!--* Main CSS Files *-->
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/vars.css" />
+  <link rel="stylesheet" href="assets/css/general.css" />
+  <link rel="stylesheet" href="assets/css/consent.css" />
+  <link rel="stylesheet" href="assets/css/navbar.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <!--* Vendor JS Files *-->
+  <script src="https://kit.fontawesome.com/b8af886c75.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+
+  <!--* Main JS Files *-->
+  <script src="assets/js/shortcut.js" defer></script>
+  <script src="assets/js/utility.js" defer></script>
+  <script src="assets/js/translation.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+  <script src="assets/js/language/about-fr.js" defer></script>
+</head>
+
+<body id="Page">
+  
+  <header id="HeaderPrimary" class="header-primary">
+    <a id="Logo" href="index.html">Rico</a>
+    <nav id="NavbarPrimary" class="navbar-primary">
+      <div class="navbar-content">
+        <a class="btn btn-navbar active" href="index-fr.html#SectionHome">
+          <i class="fa-regular fa-circle-left"></i>
+          <span class="navbar-item-name">Retour</span>
+        </a>
+        <a class="btn btn-navbar active" href="#SectionAboutHome">
+          <i class="fa fa-house"></i>
+          <span class="navbar-item-name">Accueil</span>
+        </a>
+        <a class="btn btn-navbar" href="#SectionAboutWho">
+          <i class="fa-regular fa-address-card"></i>
+          <span class="navbar-item-name">Info</span>
+        </a>
+        <a class="btn btn-navbar" href="#SectionAboutLife">
+          <i class="fa-regular fa-id-badge"></i>
+          <span class="navbar-item-name">Ma vie</span>
+        </a>
+        <a class="btn btn-navbar" href="#SectionAboutHobbies">
+          <i class="fa-solid fa-heart"></i>
+          <span class="navbar-item-name">Passions</span>
+        </a>
+        <a class="btn btn-navbar" href="index-fr.html#SectionContact">
+          <i class="fa fa-phone"></i>
+          <span class="navbar-item-name">Contact</span>
+        </a>
+      </div>
+      <div class="navbar-actions">
+        <button id="MobileNavbarToggle" class="btn btn-navbar" type="button">
+          <span class="hidden-visual">Ouvrir la navigation pour téléphone</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="navbar-divider"></div>
+        <a id="NavbarLang" class="btn btn-navbar" href="about.html">
+          <span class="hidden-visual">Changer la langue du site en</span>
+          <i class="fa-solid fa-globe" data-icon-side="left"></i>
+          <span class="navbar-item-name">English</span>
+        </a>
+        <button id="NavbarMode" class="btn btn-navbar" type="button">
+          <span class="hidden-visual">Changer le thème du site en</span>
+          <i id="NavbarIconMode" class="fa-solid fa-moon"></i>
+          <span id="NavbarTextMode" class="navbar-item-name">Foncé</span>
+        </button>
+        <button id="MobileNavbarClose" class="btn btn-navbar" type="button">
+          <span class="hidden-visual">Fermer la navigation pour téléphone</span>
+          <i class="fa-solid fa-close"></i>
+          <span class="navbar-item-name">Fermer</span>
+        </button>
+      </div>
+      <div class="navbar-scroll">
+        <p id="NavbarScroll" class="btn btn-navbar">
+          <i class="fa-solid fa-arrow-down"></i>
+          <span class="navbar-item-name">Défiler vers le bas</span>
+        </p>
+      </div>
+    </nav>
+  </header>
+  
+  <main id="MainPrimary" class="main-primary">
+    
+    <!-- SECTION HOME -->
+    <section id="SectionAboutHome" class="section home">
+      <div class="home-container">
+        <div class="home-block-heading">
+          <h1 class="home-title">
+            <span>Je, Moi, Moi-même</span>
+            <span>Info, Vie et Passions d'un</span>
+            <span>Développeur Web</span>
+          </h1>
+        </div>
+        <div class="home-actions">
+          <a class="btn btn-link" href="index-fr.html#SectionContact">Me Contacter</a>
+          <a class="btn btn-link" href="index-fr.html#SectionProjects">Mes projets</a>
+          <a class="btn btn-link" href="index-fr.html#SectionResume">Mon CV</a>
+        </div>
+        <div class="home-links">
+          <a class="btn btn-icon" href="#">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="btn btn-icon" href="#">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a class="btn btn-icon" href="#">
+            <i class="fab fa-dev"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+      
+    <!-- SECTION WHO -->
+    <section id="SectionAboutWho" class="section-primary about about-page about-who">
+      <section class="section-primary-container">
+        <header class="section-primary-header">
+          <span>Quelques informations sur</span>
+          <h2>Qui je suis</h2>
+        </header>
+        <div class="section-second-content">
+          <p>
+            <span>Prénom.</span>
+            <span>Christopher.</span>
+            <br />
+            <span>Nom de famille.</span>
+            <span>Rieffel</span>
+            <br />
+            <span>Date de naissance.</span>
+            <span>September 1998.</span>
+            <br />
+            <span>Sexe.</span>
+            <span>Male.</span>
+            <br />
+            <span>Nationalité.</span>
+            <span>French.</span>
+            <br />
+            <span>Lieu.</span>
+            <span>Alsace, France.</span>
+          </p>
+          <p>
+            Le français est ma langue maternelle. Je parle et comprends l'anglais, suffisamment bien pour travailler. Je connais quelques mots en coréen, chinois, japonais et thaï.
+          </p>
+          <p>
+            Je suis née à 5 mois et demi de grossesse.
+            Ainsi, ayant les caractéristiques d'un dyslexique.
+          </p>
+        </div>
+      </section>
+    </section>
+    
+    <!-- SECTION LIFE  -->
+    <section id="SectionAboutLife" class="section-primary about about-page about-who">
+      <section class="section-primary-container">
+        <header class="section-primary-header">
+          <span>Une histoire courte surt</span>
+          <h2>Ma vie</h2>
+        </header>
+        <div class="section-second-content">
+          <p>
+            Enfant, mon <strong>désir d'aider les autres me lançait plus tôt dans une carrière militaire ou policière</strong>. Carrières qui ne me <strong>sont pas destinées</strong> à cause d'une maladie, mais qui me mènent à une autre carrière : <strong>celle d'avocat</strong>.
+          </p>
+          <p>
+            Cependant, la découverte de ce métier, arrive en même temps que la <strong>découverte d'une passion</strong>, celle du <strong>développement de jeux/web</strong>, celle de vouloir créer mon propre jeu. J'ai découvert que <strong>les langages informatiques</strong> sont les principaux mécanismes derrière tous les sites web et les jeux. J'ai donc commencé à apprendre ces langages.
+          </p>
+          <p>
+            En même temps, j'arrive à la fin de mes années de lycée, où ce nouveau travail et cette nouvelle passion m'ont amené à vouloir devenir un <strong>avocat numérique</strong>, un travail mêlant mon désir d'aider les autres et ma passion préféré, le développement/informatique. Par pur hasard, j'ai décidé de <strong>commencer des études de droit</strong>. C'était une bonne chose, car j'ai découvert <strong>en étudiant le droit</strong> que ce métier ne me fascinait plus autant qu'avant et que <strong>je préférais coder</strong> ou même écrire diverses choses. J'ai donc décidé <strong>d'arrêter mes études de droit</strong>,  pour commencer à <strong>étudier l'informatique</strong> afin de faire de ma passion une carrière.
+          </p>
+          <p>
+            <strong>Ayant terminé mes études</strong>, 'ai décidé de créer ce site afin de <strong>me lancer</strong> dans le <strong>monde professionnel du développement<strong>.
+          </p>
+        </div>
+      </section>
+    </section>
+    
+    <!-- SECTION HOBBIES -->
+    <section id="SectionAboutHobbies" class="section-primary about about-page about-who">
+      <section class="section-primary-container">
+        <header class="section-primary-header">
+          <span>Ce que j'aime faire dans</span>
+          <h2>Mon temps libre</h2>
+        </header>
+        <div class="section-second-content">
+          <p>
+            Je suis passionné par la technologie (notamment le numérique et l'IA), les langages informatiques, les jeux vidéo, l'écriture, la lecture (mangas et light novels), les animaux (chien, lapin et chat), mon chien et mon lapin, les langues asiatiques et, de temps en temps, la culture et l'histoire en général. de temps en temps, la culture et l'histoire en général.
+          </p>
+        </div>
+      </section>
+    </section>
+    
+  </main>
+  
+  <footer class="footer-primary">
+    <div class="footer-social">
+      <a class="btn btn-icon" href="#">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a class="btn btn-icon" href="#">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a class="btn btn-icon" href="#">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a class="btn btn-icon" href="#">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="btn btn-icon" href="#">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    <div class="footer-legal">
+      <a class="btn-link footer" href="politique.html">Politique de confidentialité</a>
+    </div>
+    <p class="footer-content">&copy; 2022 - Christopher Rieffel.</p>
+  </footer>
+    
+  <aside id="DataConsent" class="data-consent hidden">
+    <div class="data-consent-container">
+      <div class="data-consent-lang">
+        <button id="ConsentLang" class="btn" type="button">In English</button>
+      </div>    
+      <div class="data-consent-content">
+        <img data-i18n-key="DataConsentImgAlt" src="assets/images/cookie.png" />
+        <h2 data-i18n-key="DataConsentTitle">Consentement aux données</h2>
+        <p data-i18n-key="DataConsentDesc">
+          Ce site stocke des données sur votre navigateur pour vous permettre une meilleure expérience sur le site. 
+          Ces données sont utilisées pour la langue et le thème du site. Pour plus d'informations, vous pouvez <a class="consent-link" href="politique.html" data-i18n-key="DataConsentDescLink">lire la politique de données de ce site</a>.
+      </p>
+      </div>
+      <div class="data-consent-actions">
+        <button id="DataConsentAccept" class="btn" type="button" data-i18n-key="DataConsentBtnAccept">Accepter</button>
+        <button id="DataConsentRefuse" class="btn" type="button" data-i18n-key="DataConsentBtnRefuse">Refuser</button>
+      </div>
+    </div>
+  </aside>
+  
+</body>
+
+</html>
