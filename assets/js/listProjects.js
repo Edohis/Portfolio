@@ -8,8 +8,8 @@ const listFeaturedProjectsEN = [
     "project-title": "Rico - Portfolio",
     "project-desc": "my web developer portfolio",
     "project-tag": "HTML5 CSS3 JavaScript Fontawasome",
-    "project-act-github": "",
-    "project-act-link": "",
+    "project-act-github": "https://github.com/Edohis/Portfolio",
+    "project-act-link": "https://edohis.github.io/Portfolio/index.html",
     "project-act-watch": "",
     "project-act-download": ""
   },
@@ -37,7 +37,7 @@ const listFeaturedProjectsEN = [
     "project-act-github": "",
     "project-act-link": "",
     "project-act-watch": "",
-    "project-act-download": ""
+    "project-act-download": "assets/download/tictactoe.zip"
   }
 ];
 
@@ -50,8 +50,8 @@ const listFeaturedProjectsFR = [
     "project-title": "Rico - Portfolio",
     "project-desc": "mon portfolio de développeur web",
     "project-tag": "HTML5 CSS3 JavaScript Fontawasome",
-    "project-act-github": "",
-    "project-act-link": "",
+    "project-act-github": "https://github.com/Edohis/Portfolio",
+    "project-act-link": "https://edohis.github.io/Portfolio/index.html",
     "project-act-watch": "",
     "project-act-download": ""
   },
@@ -79,7 +79,7 @@ const listFeaturedProjectsFR = [
     "project-act-github": "",
     "project-act-link": "",
     "project-act-watch": "",
-    "project-act-download": ""
+    "project-act-download": "assets/download/tictactoe.zip"
   }
 ];
 
@@ -214,8 +214,8 @@ const listCompletedPersoProjectsEN = [
     "project-title": "Rico - Portfolio",
     "project-desc": "my web developer portfolio",
     "project-tag": "HTML5 CSS3 JavaScript Fontawasome",
-    "project-act-github": "",
-    "project-act-link": "",
+    "project-act-github": "https://github.com/Edohis/Portfolio",
+    "project-act-link": "https://edohis.github.io/Portfolio/index.html",
     "project-act-watch": "",
     "project-act-download": ""
   }
@@ -230,8 +230,8 @@ const listCompletedPersoProjectsFR = [
     "project-title": "Rico - Portfolio",
     "project-desc": "mon portfolio de développeur web",
     "project-tag": "HTML5 CSS3 JavaScript Fontawasome",
-    "project-act-github": "",
-    "project-act-link": "",
+    "project-act-github": "https://github.com/Edohis/Portfolio",
+    "project-act-link": "https://edohis.github.io/Portfolio/index.html",
     "project-act-watch": "",
     "project-act-download": ""
   }
@@ -285,20 +285,20 @@ const ListFeaturedTrainingProjectsEN = [
     "project-act-github": "",
     "project-act-link": "",
     "project-act-watch": "",
-    "project-act-download": ""
+    "project-act-download": "assets/download/tictactoe.zip"
   },
   {
     "project-id": "site-html-perso",
     "project-img-has": false,
     "project-img-url": "",
     "project-img-alt": "no picture",
-    "project-title": "Personal website in HTML",
-    "project-desc": "Creation of a personal website in HTML",
+    "project-title": "Game in HTML",
+    "project-desc": "Creation of a game (French) in HTML",
     "project-tag": "HTML5 CSS3 Javascript",
     "project-act-github": "",
     "project-act-link": "",
     "project-act-watch": "",
-    "project-act-download": ""
+    "project-act-download": "assets/download/maison.zip"
   }
 ];
 
@@ -314,19 +314,19 @@ const ListFeaturedTrainingProjectsFR = [
     "project-act-github": "",
     "project-act-link": "",
     "project-act-watch": "",
-    "project-act-download": ""
+    "project-act-download": "assets/download/tictactoe.zip"
   },
   {
     "project-id": "site-html-perso",
     "project-img-has": false,
     "project-img-url": "",
     "project-img-alt": "pas d'image",
-    "project-title": "Site Personnel en HTML",
-    "project-desc": "Création d'un site personnel en HTML",
+    "project-title": "Jeu en HTML",
+    "project-desc": "Création d'un jeu en HTML",
     "project-tag": "HTML5 CSS3 Javascript",
     "project-act-github": "",
     "project-act-link": "",
     "project-act-watch": "",
-    "project-act-download": ""
+    "project-act-download": "assets/download/maison.zip"
   }
 ];
